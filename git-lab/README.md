@@ -6,36 +6,36 @@ you are a part of a development team building a company website. Multiple develo
 
 we created a directory, initialize the repo, created a homepage file and committed the initial file.
 
-![alt text](/screensots/image.png)
+![alt text](/git-lab/screenshots/image.png)
 
 # Part 1 - Create Feature Branches
 
 in thi part we creates a new branch called feature-navbar, added a file called index.html and committed the changes.
 
-![alt text](/screensots/image-1.png)
+![alt text](/git-lab/screenshot/image-1.png)
 
 # Part 2 - Simulate Another Developer
 
 we created another branch called feature-footer from the master branch.
 
-![alt text](/screensots/image-2.png)
+![alt text](/git-lab/screenshot/image-2.png)
 
 # Part 3 - Create Merge Conflict
 
 we edited the same line in both branches, and when we try to merge the changes to the master we can see that we have a merge conflict.
 
-![alt text](/screensots/image-3.png)
+![alt text](/git-lab/screenshot/image-3.png)
 
 # Part 4 - Resolve Conflict
 
 we opened the conflicted file and edited it, we staged the changes,and committed them .
 
-![alt text](/screensots/image-4.png)
+![alt text](/git-lab/screenshot/image-4.png)
 
 
 here is the graph.
 
-![alt text](/screensots/image-5.png)
+![alt text](/git-lab/screenshot/image-5.png)
 
 # LAB 2 - Advanced Git & DevOps workflow Lab
 
