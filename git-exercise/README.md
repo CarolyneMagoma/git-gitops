@@ -153,14 +153,36 @@ rebase=rewrites history for cleanliness
 
 # 6. Emergency Hotfix Production Scenario
 
+we created the branches
+ 
+![alt text](image-3.png)
+
 
 
 # 7. Stash and Context Switching Excercise
 
+You are halfway through feature development when an urgent bug arrives.
+
+we created a new file in a branch and when i tried to change branches i got a warning.
+telling me to commit the changes or stash them so we go with stashing.
+
+![alt text](image.png) -stashing screenshot
+
+to save unfinished work instead of commiting we stash so we can come back later
+
+![alt text](image-1.png)
+
+we switched to different branch, where we did our work and switched back to the branch with stashed work.
+
+![alt text](image-2.png)
+
+
 # 8. Accidental Secret Exposure Recovery
 
-# 9. Full CI/CD Git Workflow Project
+A developer accidentally commits:
+● API keys
+● passwords
+● .env file
 
 
-# 10. Infrastructure as Code GitOps Simulation
 
