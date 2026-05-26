@@ -9,7 +9,7 @@ each branch should contain different files and atleast 3 commits. Merge all bran
 
 In the image below we can see that we have four branches.
 
-![alt text](image.png)
+![alt text](/git-exercise/screenshots/image20.png)
 
 In the login branch we created three files file1, file2 and file 3
 
@@ -155,7 +155,7 @@ rebase=rewrites history for cleanliness
 
 we created the branches
  
-![alt text](image-3.png)
+![alt text](/git-exercise/screenshots/image21.png)
 
 
 
@@ -183,6 +183,31 @@ A developer accidentally commits:
 ● API keys
 ● passwords
 ● .env file
+
+we created a .env file
+
+![alt text](image.png)
+
+we committed the .env file with secrets. with the secrets exposed, anyone with repository access may retrieve them,even if the file is deleted later, git history still contains it.
+
+![alt text](image-1.png)
+
+to avoid such occurences, we removed current tracking
+
+git rm --chached .env this keep the local file but stop tracking it. we then commit the removal.
+
+![alt text](image-2.png)
+
+# note: after that we regenrate new keys and change passwords 
+
+.gitignore file is a plain text file used to tell Git which files or directories should be ignored and excluded from being tracked in your project history.
+
+we created a .gitignore file and committed.
+
+![alt text](image-3.png)
+
+deleting the file normally is NOT enough because the secrets remain in old commits.
+
 
 
 
