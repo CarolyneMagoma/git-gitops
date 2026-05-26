@@ -11,33 +11,34 @@ In the image below we can see that we have four branches.
 
 ![alt text](image.png)
 
-in the login branch we created three files file1, file2 and file 3
-![alt text](image.png)
+In the login branch we created three files file1, file2 and file 3
+
+![alt text](/git-exercise/screenshots/image.png)
  
 
- i have three commits in the login branch.
+we created three commits in the login branch.
 
-![alt text](image-1.png)
+![alt text](/git-exercise/screenshots/image-1.png)
 
 
-in the dashboard branch we created 3 files, dashboard1, dashboard2 and dashboard3
+In the dashboard branch we created 3 files, dashboard1, dashboard2 and dashboard3
 
-![alt text](image3.png)
+![alt text](/git-exercise/screenshots/image3.png)
 
 the git logs for feature/dashboard we have three commits
 
-![alt text](image4.png)
+![alt text](/git-exercise/screenshots/image4.png)
 
 In the reports branch we created 3 files , reports1, reports2 and report3
 
-![alt text](image5.png)
+![alt text](/git-exercise/screenshots/image5.png)
 
-the reports branch has three commits
+The feature/reports branch has three commits
 
-![alt text](image6.png)
+![alt text](/git-exercise/screenshots/image6.png)
 
 
-we merge all the branches to develop branch.
+We merge all the branches to develop branch.
 as we can see we have all the files that we created from each branch onto the develop branch.
 
 ![alt text](image.png)
@@ -53,7 +54,7 @@ As we can see, the main branch contains all the files from all the branches now.
 
 # 2. Two Students Edit Same Line (Conflict Lab)
 
-two students edit the same cofiguration line in congig/app.env
+Two students edit the same cofiguration line in congig/app.env
 Student A changes: 
 APP_MODE=development
 Student B changes:
@@ -61,14 +62,14 @@ APP_MODE=production
 
 We created congig/app.env file in the dashboard and reports branches they both contained the APP_MODE=production and APP_MODE=development.
 
-as we can see we have created a conflict because the app.env file in the two branches have different content that are somewhat similar and git doesnt know which data to keep, so it creates the conflict.
+when we tried to merge, we can see we created a conflict because the app.env file in the two branches have different content that are somewhat similar and git doesnt know which data to keep, so it creates the conflict.
 
-![alt text](image10.png)
+![alt text](/git-exercise/screenshots/image10.png)
 
-To resolve this conflict we have to edit one of the file to somethig else
+To resolve this conflict we have to edit one of the file to something else
 for our case we combined both.
 
-![alt text](image.png)
+![alt text](/git-exercise/screenshots/image7.png)
 
 
 # 3. Recover From Disaster(Reset vs Revert)
@@ -77,56 +78,56 @@ A bad deployment was pushed to production
 
 here have 5 commits and we did git revert
 
-![alt text](image-1.png)
+![alt text](/git-exercise/screenshots/image8.png)
 
 The git revert did not delete the last commit but it added a new commit
 
-![alt text](image-2.png)
+![alt text](/git-exercise/screenshots/image9.png)
 
-we created another commit with which we dit the git reset --soft HEAD~1  on
+we created another commit with which we did the git reset --soft HEAD~1  on
 
-![alt text](image-3.png)
+![alt text](/git-exercise/screenshots/image10.png)
 
-we can see that this time the commit got deleted but when you do git status files changes remain staged.
+We can see that this time the commit got deleted but when you do git status files changes remain staged.
 
-![alt text](image-4.png)
+![alt text](/git-exercise/screenshots/image11.png)
 
-we did another commit and we used git rest --hard HEAD~1 this time we removed the commit as we can see the git status, the staged changes were also removed, the working directory changes deleted permanently..
+We did another commit and we used git reset --hard HEAD~1 this time we removed the commit as we can see the git status, the staged changes were also removed, the working directory changes deleted permanently..
 
-![alt text](image-5.png)
+![alt text](/git-exercise/screenshots/image12.png)
 
-the difference between git revert, git reset --soft and git reset --hard is that git revert does not delete the commits but adds a new commit, git reset --soft , removes the commits but does not remove it from the staging face, git reset --hard removes the commit permanently,from the staging,and the working directory.
+The difference between git revert, git reset --soft and git reset --hard is that git revert does not delete the commits but adds a new commit, git reset --soft , removes the commits but does not remove it from the staging face, git reset --hard removes the commit permanently,from the staging,and the working directory.
 
 
 # 4. Simulated Team Collaboration Workflow.
 
-we used a repository called JosephKimiri, we forked it to make a copy to our repository so we can make changes.
+We used a repository called JosephKimiri, we forked it to make a copy to our repository so we can make changes.
 
-![alt text](image-6.png)
+![alt text](/git-exercise/screenshots/image13.png)
 
 we copied the url to that forked repository.
 
-![alt text](image-7.png)
+![alt text](/git-exercise/screenshots/image14.png)
 
 After that we git cloned the repo to our local repo, we can see that josephkimiri has been cloned to our local repository.
 
-![alt text](image-8.png)
+![alt text](/git-exercise/screenshots/image15.png)
 
 we created a feature branch feature/timer.
 
-![alt text](image-9.png)
+![alt text](/git-exercise/screenshots/image16.png)
 
 we created file on the feature branch and we have to push the changes to the remote repo.
 
-![alt text](image-10.png)
+![alt text](/git-exercise/screenshots/image17.png)
 
 after pushing on the git repository this is what we have, to pull and compare 
 
-![alt text](image-11.png)
+![alt text](/git-exercise/screenshots/image18.png)
 
 we added a comment to our pull request
 
-![alt text](image-12.png)
+![alt text](/git-exercise/screenshots/image19.png)
 
 we created a ruleset for the github repository.
 
@@ -136,7 +137,7 @@ we created a ruleset for the github repository.
 
 This lab we created 7 commits that were messy and then used rebase to squash some commits ie combined some commits.and rewrote others
 
-![alt text](image.png)
+![alt text](/git-exercise/screenshots/image.png)
 
 Merge  Workflow
 
