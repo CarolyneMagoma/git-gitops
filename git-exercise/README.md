@@ -9,48 +9,46 @@ each branch should contain different files and atleast 3 commits. Merge all bran
 
 In the image below we can see that we have four branches.
 
-![alt text](/git-exercise/screenshots/image20.png)
+![alt text](/git-exercise/screenshots1/image1.png)
 
-In the login branch we created three files file1, file2 and file 3
+In the feature/login branch we created three files login1, login2 and login3
 
-![alt text](/git-exercise/screenshots/image.png)
+![alt text](/git-exercise/screenshots1/image3.png)
  
 
 we created three commits in the login branch.
 
-![alt text](/git-exercise/screenshots/image-1.png)
+![alt text](/git-exercise/screenshots1/image4.png)
 
 
-In the dashboard branch we created 3 files, dashboard1, dashboard2 and dashboard3
+In the feature/dashboard branch we created 3 files, dashboard1, dashboard2 and dashboard3
 
-![alt text](/git-exercise/screenshots/image3.png)
+![alt text](/git-exercise/screenshots1/image5.png)
 
-the git logs for feature/dashboard we have three commits
+"git logs" shows feature/dashboard has three commits
 
-![alt text](/git-exercise/screenshots/image4.png)
+![alt text](/git-exercise/screenshots1/image6.png)
 
 In the reports branch we created 3 files , reports1, reports2 and report3
 
-![alt text](/git-exercise/screenshots/image5.png)
+![alt text](/git-exercise/screenshots1/image2.png)
 
 The feature/reports branch has three commits
 
-![alt text](/git-exercise/screenshots/image6.png)
+![alt text](/git-exercise/screenshots1/inage7.png)
 
 
 We merge all the branches to develop branch.
-as we can see we have all the files that we created from each branch onto the develop branch.
 
-![alt text](image.png)
+![alt text](/git-exercise/screenshots1/image8.png)
 
-we merged the develop branch to main branch
+On the develops branch we did listing and all the files from all the branches are there as we can see.
 
-![alt text](image8.png)
+![alt text](/git-exercise/screenshots1/image9.png)
 
-As we can see, the main branch contains all the files from all the branches now.
+We merged the develop branch to main branch, As we can see, the main branch contains all the files from all the branches now.
 
-![alt text](image9.png)
-
+![alt text](/git-exercise/screenshots1/image10.png)
 
 # 2. Two Students Edit Same Line (Conflict Lab)
 
@@ -64,12 +62,12 @@ We created congig/app.env file in the dashboard and reports branches they both c
 
 when we tried to merge, we can see we created a conflict because the app.env file in the two branches have different content that are somewhat similar and git doesnt know which data to keep, so it creates the conflict.
 
-![alt text](/git-exercise/screenshots/image10.png)
+![alt text](/git-exercise/screenshots1/image11.png)
 
 To resolve this conflict we have to edit one of the file to something else
 for our case we combined both.
 
-![alt text](/git-exercise/screenshots/image7.png)
+![alt text](/git-exercise/screenshots1/image12.png)
 
 
 # 3. Recover From Disaster(Reset vs Revert)
@@ -163,19 +161,10 @@ we created the branches
 
 You are halfway through feature development when an urgent bug arrives.
 
-we created a new file in a branch and when i tried to change branches i got a warning.
-telling me to commit the changes or stash them so we go with stashing.
+To save unfinished work instead of commiting we stash so we can come back later, but we have to stage the files first.
+We switched to different branch, where we did our work and switched back to the branch with stashed work.
 
-![alt text](image.png) -stashing screenshot
-
-to save unfinished work instead of commiting we stash so we can come back later
-
-![alt text](image-1.png)
-
-we switched to different branch, where we did our work and switched back to the branch with stashed work.
-
-![alt text](image-2.png)
-
+![alt text](/git-exercise/screenshots1/image33.png)
 
 # 8. Accidental Secret Exposure Recovery
 
