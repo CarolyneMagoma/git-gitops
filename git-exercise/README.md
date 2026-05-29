@@ -129,13 +129,25 @@ we added a comment to our pull request
 
 we created a ruleset for the github repository.
 
-
-
 # 5. Git Rebase vs Merge History Lab
 
-This lab we created 7 commits that were messy and then used rebase to squash some commits ie combined some commits.and rewrote others
+This lab we created 7 commits that were messy and then used rebase to squash some commits ie combined some commits.and rewrite others.
 
-![alt text](/git-exercise/screenshots/image.png)
+As we can see, the image shows combining some commits by changing pick to squash. But i made a mistake and changed the the HEAD commit, this throws an error.
+
+![alt text](/git-exercise/screenshots1/image24.png)
+
+From our screenshot below we combined file2 ,file3 and file4 commits, since in our case we did not provide a commit so it took the first pick which was "this is file2".
+
+![alt text](/git-exercise/screenshots1/image25.png)
+
+We did reworded, "this is file6" to something else.
+
+![alt text](/git-exercise/screenshots1/image26.png).
+
+we reworded to.
+
+![alt text](/git-exercise/screenshots1/image27.png)
 
 Merge  Workflow
 
@@ -151,11 +163,21 @@ rebase=rewrites history for cleanliness
 
 # 6. Emergency Hotfix Production Scenario
 
-we created the branches
+we created the main.develop and release/v1.2 branches
  
 ![alt text](/git-exercise/screenshots/image21.png)
 
+We created a python file where we introduced a bug in develop branch and then created a hotfix/login-failure branch, where we fixed the bug and commited the changes.
 
+![alt text](/git-exercise/screenshots1/image28.png)
+
+We changed to another branch "develop" where we cherry-picked a commit from from hotfix/login-failure branch and as we can see the commit has been checked to develop branch.
+
+![alt text](/git-exercise/screenshots1/image29.png)
+
+we did the same thing on release/v1.2 branch, we encountered some conflicts at first but we fixed.
+
+![alt text](/git-exercise/screenshots1/image30.png)
 
 # 7. Stash and Context Switching Excercise
 
